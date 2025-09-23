@@ -1,4 +1,4 @@
-# 📊   Projet 1: Analyse des ventes avec un tableau de bord sous Excel
+# 📊   Projet 1: Analyse des ventes sous Excel
 
 ## 🎯 Objectif
 Ce projet vise à suivre les performances des ventes par région et catégorie pour identifier les zones à améliorer:
@@ -29,3 +29,19 @@ Ce projet vise à explorer les performances des employés afin de :
 
 ## 🗂 Données
 - **Source HR Analysis** : [HR Analytics Dataset (Kaggle)](https://www.kaggle.com/datasets/rhuebner/human-resources-data-set)
+
+
+
+-----
+
+
+# 📊 Projet 3: Analyse des facteurs de performances commerciales  avec Python
+
+## 🎯 Objectif
+Ce projet vise à explorer les facteurs qui influencent les performances des employés afin de:
+- Comprendre les interactions entre les produits
+- comprendre les performances régionales et les marges
+
+## 🗂 Données
+- **Source Sales analysis** : [Superstore Dataset(Kaggle)](https://www.kaggle.com/datasets/vivek468/superstore-dataset-final)
+​

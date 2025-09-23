@@ -30,6 +30,7 @@ Ce projet vise à explorer les performances des employés afin de :
 ## 🗂 Données
 - **Source HR Analysis** : [HR Analytics Dataset (Kaggle)](https://www.kaggle.com/datasets/rhuebner/human-resources-data-set)
 
+![e9baf41c-1c65-4096-882a-d268d8b9f9a0](https://github.com/user-attachments/assets/46d2e654-1bc5-45d8-85d7-cad6cbebf893)
 
 
 -----
@@ -44,4 +45,8 @@ Ce projet vise à explorer les facteurs qui influencent les performances des emp
 
 ## 🗂 Données
 - **Source Sales analysis** : [Superstore Dataset(Kaggle)](https://www.kaggle.com/datasets/vivek468/superstore-dataset-final)
+
+  
+![close-up-de-femmes-cadres-avec-tablette-numerique (1)](https://github.com/user-attachments/assets/1adaf1c1-5cab-4a2e-a513-6fde790fda64)
+
 ​

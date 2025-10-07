@@ -45,6 +45,7 @@ Ce projet vise à explorer les facteurs qui influencent les performances des emp
 
 ## 🗂 Données
 - **Source Sales analysis** : [Superstore Dataset(Kaggle)](https://www.kaggle.com/datasets/vivek468/superstore-dataset-final)
+- __Coming soon...
 
   
 ![close-up-de-femmes-cadres-avec-tablette-numerique (1)](https://github.com/user-attachments/assets/1adaf1c1-5cab-4a2e-a513-6fde790fda64)

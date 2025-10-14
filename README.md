@@ -35,6 +35,57 @@ Ce projet vise à explorer les performances des employés afin de :
 
 -----
 
+# 📊Projet: Analyse des données financières d'Apple (AAPL) et Application du Machine Learning 
+
+________
+
+## Objectif
+
+Ce projet vise à exploiter les données financières d'Apple pour générer des insights stratégiques et des recommandations d'investissement ciblées. À travers un processus analytique complet — extraction et traitement des données de marché, analyse quantitative de performance, et déploiement d'algorithmes de machine learning — nous développerons des modèles prédictifs robustes et des stratégies de trading algorithmique optimisées, transformant ainsi l'information brute en intelligence décisionnelle actionnable.
+______________
+
+### 1. Analyse Exploratoire des Données (EDA)
+- Collecter et nettoyer les données historiques du cours d'Apple (AAPL)
+- Visualiser les rendements
+- Visualiser l'évolution du prix, du volume et de la volatilité
+- Analyser les statistiques descriptives (moyenne, écart-type, distribution)
+
+### 2. Feature Engineering
+- Créer des indicateurs techniques : 
+  - Moyennes mobiles (SMA, EMA)
+  - RSI (Relative Strength Index)
+  - MACD (Moving Average Convergence Divergence)
+  - OBV (On Balance Volume)
+  - A/D Line (Indicateur d'accumulation et de distribution)
+  - CMF (Chaikin Money Flow)
+- Générer des features temporelles (jour de la semaine, mois, trimestre)
+- Calculer les returns et log-returns
+
+### 3. Backtesting et mesure de performance
+- Implémenter une stratégie de Backtesting
+- Mesurer les performances de la stratégiegies 
+
+### 4. Modélisation Prédictive
+**Objectif principal :** Prédire le prix de clôture d'Apple
+
+#### Modèles à tester :
+- Random Forest Regressor
+- XGBoost
+
+### 5. Évaluation et Comparaison
+- Comparer les performances des modèles avec :
+  - RMSE (Root Mean Squared Error)
+  - MAE (Mean Absolute Error)
+  - R² Score
+
+### 6. Visualisation et Communication
+- Créer des graphiques interactifs (Plotly)
+- Visualiser les prédictions vs valeurs réelles
+- Dashboard des métriques de performance
+
+## 🗂 Données
+- **APPL** : télécharger les données d'apple grâce à la bibliothèque yfinance
+-----
 
 # 📊 Projet 3: Analyse des facteurs de performances commerciales  avec Python
 

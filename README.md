@@ -82,6 +82,9 @@ Ce projet vise à exploiter les données financières d'Apple pour générer des
 
 ## 🗂 Données
 - **APPL** : télécharger les données d'apple grâce à la bibliothèque yfinance
+
+![alt text](image.png)
+
 -----
 
 # 📊 Projet 4: Analyse des facteurs de performances commerciales  avec Python

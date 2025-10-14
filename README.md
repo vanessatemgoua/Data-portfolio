@@ -35,14 +35,11 @@ Ce projet vise à explorer les performances des employés afin de :
 
 -----
 
-# 📊Projet: Analyse des données financières d'Apple (AAPL) et Application du Machine Learning 
-
-________
+# 📊Projet 3: Analyse des données financières d'Apple (AAPL) et Application du Machine Learning 
 
 ## Objectif
 
 Ce projet vise à exploiter les données financières d'Apple pour générer des insights stratégiques et des recommandations d'investissement ciblées. À travers un processus analytique complet — extraction et traitement des données de marché, analyse quantitative de performance, et déploiement d'algorithmes de machine learning — nous développerons des modèles prédictifs robustes et des stratégies de trading algorithmique optimisées, transformant ainsi l'information brute en intelligence décisionnelle actionnable.
-______________
 
 ### 1. Analyse Exploratoire des Données (EDA)
 - Collecter et nettoyer les données historiques du cours d'Apple (AAPL)
@@ -87,7 +84,7 @@ ______________
 - **APPL** : télécharger les données d'apple grâce à la bibliothèque yfinance
 -----
 
-# 📊 Projet 3: Analyse des facteurs de performances commerciales  avec Python
+# 📊 Projet 4: Analyse des facteurs de performances commerciales  avec Python
 
 ## 🎯 Objectif
 Ce projet vise à explorer les facteurs qui influencent les performances des employés afin de:

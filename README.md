@@ -1,4 +1,4 @@
-# 📊   Projet 1: Analyse des ventes sous Excel
+# Projet 1: Analyse des ventes sous Excel
 
 ## 🎯 Objectif
 Ce projet vise à suivre les performances des ventes par région et catégorie pour identifier les zones à améliorer:
@@ -18,9 +18,9 @@ Ce projet vise à suivre les performances des ventes par région et catégorie p
 ---
   
 
-# 📊 Projet 2: Analyse des performances des employés (HR Analytics) avec Python
+#  Projet 2: Analyse des performances des employés (HR Analytics) avec Python
 
-## 🎯 Objectif
+## Objectif
 Ce projet vise à explorer les performances des employés afin de :
 - Comprendre la répartition des scores de performance
 - Identifier les outliers
@@ -35,7 +35,7 @@ Ce projet vise à explorer les performances des employés afin de :
 
 -----
 
-# 📊Projet 3: Analyse des données financières d'Apple (AAPL) et Application du Machine Learning 
+# Projet 3: Analyse des données financières d'Apple (AAPL) et Application du Machine Learning 
 
 ## Objectif
 
@@ -87,9 +87,41 @@ Ce projet vise à exploiter les données financières d'Apple pour générer des
 
 -----
 
-# 📊 Projet 4: Analyse des facteurs de performances commerciales  avec Python
+# Projet 4: Analyse du Taux de Désabonnement Client (Churn Rate Analysis)
 
-## 🎯 Objectif
+## Objectif & Aperçu
+
+Ce projet d'analyse de données, mené pour une entreprise de télécommunications (Databel), visait à réduire le taux de désabonnement en identifiant et en comprenant les facteurs de risque clés. Le livrable final est un tableau de bord Power BI fournissant des insights actionnables.
+
+## 🛠️ Méthodologie & Réalisations Clés
+
+- Nettoyage et Transformation des Données (Power Query) : Utilisation de l'éditeur Power Query (M Language) pour nettoyer, structurer et préparer le jeu de données avant l'analyse.
+- Calculs Avancés (DAX) : Implémentation de mesures complexes en DAX pour :
+    - Le calcul du Churn Rate (global et par segment).
+    - L'établissement de métriques d'engagement et de fidélisation.
+
+- Analyse et Identification des Facteurs Clés : L'analyse visuelle et l'exploration des données ont permis d'isoler les variables ayant le plus fort impact sur le désabonnement :
+    - Démographie du client.
+
+    - Type de contrat souscrit.
+
+    - Usage des services (en particulier l'usage international et l'utilisation des données).
+
+- Visualisation et Communication : Conception et implémentation d'un tableau de bord interactif sous Power BI. Ce dashboard éclaire les décisions et permet de cibler les patterns de désabonnement pour des actions marketing et opérationnelles spécifiques.
+
+## 🗂️ Données
+
+- Source : Données de l'entreprise de télécommunications Databel
+
+- Outils Clés : Outils Clés : Power BI (Power Query, DAX, Visualisation).
+
+
+
+-----
+
+# Projet 5: Analyse des facteurs de performances commerciales  avec Python
+
+##  Objectif
 Ce projet vise à explorer les facteurs qui influencent les performances des employés afin de:
 - Comprendre les interactions entre les produits
 - comprendre les performances régionales et les marges

@@ -1,137 +1,103 @@
-# Projet 1: Analyse des ventes sous Excel
+# Portfolio - Vanessa Kenfack
 
-## 🎯 Objectif
-Ce projet vise à suivre les performances des ventes par région et catégorie pour identifier les zones à améliorer:
-- Comprendre la répartition des performances régionales
-- Identifier les régions avec un fort impact
-- Fournir des recommandations pour l’amélioration des ventes
+Consultante Data, je conçois des solutions de reporting décisionnel, des pipelines de données et des dashboards qui aident les équipes métiers à prendre de meilleures décisions.
 
-## 🗂 Données
-- **Source Sales analysis** : [Superstore Dataset(Kaggle)](https://www.kaggle.com/datasets/vivek468/superstore-dataset-final)
-
-## 📈Aperçu
-<img width="1327" height="802" alt="image" src="https://github.com/user-attachments/assets/fd2d6fd0-a889-49ed-a285-efcebf1cfa44" />
-
-
-
+📧 vanessa.kenfack@outlook.fr | 🔗 [LinkedIn](https://www.linkedin.com/in/vanessa-kenfack-temgoua-028937248)
 
 ---
-  
 
-#  Projet 2: Analyse des performances des employés (HR Analytics) avec Python
+## 🗂️ Projets
 
-## Objectif
-Ce projet vise à explorer les performances des employés afin de :
-- Comprendre la répartition des scores de performance
-- Identifier les outliers
-- Étudier les relations entre performance et variables (heures travaillées, âge, etc.)
-- Fournir des recommandations pour l’amélioration RH
+### 1. Analyse du Taux de Désabonnement Client (Churn Rate Analysis)
+**Power BI | DAX | Power Query**
 
-## 🗂 Données
-- **Source HR Analysis** : [HR Analytics Dataset (Kaggle)](https://www.kaggle.com/datasets/rhuebner/human-resources-data-set)
+Projet mené pour une entreprise de télécommunications (Databel) visant à réduire le taux de désabonnement en identifiant les facteurs de risque clés.
 
-![e9baf41c-1c65-4096-882a-d268d8b9f9a0](https://github.com/user-attachments/assets/46d2e654-1bc5-45d8-85d7-cad6cbebf893)
+**Réalisations :**
+- Nettoyage et transformation des données via Power Query (M Language)
+- Calcul du Churn Rate global et par segment avec des mesures DAX avancées
+- Identification des facteurs clés : démographie, type de contrat, usage des services
+- Conception d'un dashboard interactif Power BI orienté décision marketing
 
+📁 [Voir le projet](./Analyse%20du%20taux%20de%20d%C3%A9sabonnement%20des%20clients)
 
------
+---
 
-# Projet 3: Analyse des données financières d'Apple (AAPL) et Application du Machine Learning 
+### 2. Atlas Labs - HR Analytics Dashboard
+**Power BI | DAX | Power Query**
 
-## Objectif
+Tableau de bord RH interactif conçu pour suivre et analyser les effectifs et l'attrition d'une entreprise.
 
-Ce projet vise à exploiter les données financières d'Apple pour générer des insights stratégiques et des recommandations d'investissement ciblées. À travers un processus analytique complet — extraction et traitement des données de marché, analyse quantitative de performance, et déploiement d'algorithmes de machine learning — nous développerons des modèles prédictifs robustes et des stratégies de trading algorithmique optimisées, transformant ainsi l'information brute en intelligence décisionnelle actionnable.
+**Réalisations :**
+- Suivi des effectifs globaux : 1 470 employés dont 1 233 actifs et 237 inactifs
+- Calcul et visualisation du taux d'attrition (16,1%) par département et poste
+- Analyse des tendances de recrutement entre 2012 et 2022 avec segmentation attrition/rétention
+- Répartition des employés actifs par département (Technology, Sales, Human Resources) et par rôle métier
+- Navigation multi-pages : Overview, Démographie, Suivi des performances, Attrition
+- Exploration des données RH pour comprendre les facteurs qui influencent les performances des employés.
 
-### 1. Analyse Exploratoire des Données (EDA)
-- Collecter et nettoyer les données historiques du cours d'Apple (AAPL)
-- Visualiser les rendements
-- Visualiser l'évolution du prix, du volume et de la volatilité
-- Analyser les statistiques descriptives (moyenne, écart-type, distribution)
+📁 [Voir le projet](./HR%20analysis)
 
-### 2. Feature Engineering
-- Créer des indicateurs techniques : 
-  - Moyennes mobiles (SMA, EMA)
-  - RSI (Relative Strength Index)
-  - MACD (Moving Average Convergence Divergence)
-  - OBV (On Balance Volume)
-  - A/D Line (Indicateur d'accumulation et de distribution)
-  - CMF (Chaikin Money Flow)
-- Générer des features temporelles (jour de la semaine, mois, trimestre)
-- Calculer les returns et log-returns
+---
 
-### 3. Backtesting et mesure de performance
-- Implémenter une stratégie de Backtesting
-- Mesurer les performances de la stratégiegies 
+### 3. Analyse Financière Apple (AAPL) et Machine Learning
+**Python | Pandas | Plotly | Scikit-learn | XGBoost**
 
-### 4. Modélisation Prédictive
-**Objectif principal :** Prédire le prix de clôture d'Apple
+Exploitation des données financières d'Apple pour générer des insights stratégiques et des modèles prédictifs.
 
-#### Modèles à tester :
-- Random Forest Regressor
-- XGBoost
+**Réalisations :**
+- Extraction des données via `yfinance` et analyse exploratoire complète
+- Feature engineering : indicateurs techniques (SMA, EMA, RSI, MACD, OBV)
+- Backtesting d'une stratégie de trading algorithmique
+- Comparaison de modèles prédictifs (Random Forest, XGBoost) sur le prix de clôture
+- Dashboard interactif Plotly avec métriques de performance (RMSE, MAE, R²)
 
-### 5. Évaluation et Comparaison
-- Comparer les performances des modèles avec :
-  - RMSE (Root Mean Squared Error)
-  - MAE (Mean Absolute Error)
-  - R² Score
+📁 [Voir le projet](./Financial%20Analysis)
 
-### 6. Visualisation et Communication
-- Créer des graphiques interactifs (Plotly)
-- Visualiser les prédictions vs valeurs réelles
-- Dashboard des métriques de performance
+---
 
-## 🗂 Données
-- **APPL** : télécharger les données d'apple grâce à la bibliothèque yfinance
+### 4. HR Analytics - Analyse des Performances Employés
+**Python | Pandas | NumPy | Matplotlib**
 
-![alt text](image.png)
+Exploration des données RH pour comprendre les facteurs qui influencent les performances des employés.
 
------
+**Réalisations :**
+- Analyse de la distribution des scores de performance
+- Détection d'outliers et étude des corrélations (heures travaillées, âge, etc.)
+- Recommandations concrètes pour l'amélioration des pratiques RH
 
-# Projet 4: Analyse du Taux de Désabonnement Client (Churn Rate Analysis)
+📁 [Voir le projet](./HR%20analysis)
 
-## Objectif & Aperçu
+---
 
-Ce projet d'analyse de données, mené pour une entreprise de télécommunications (Databel), visait à réduire le taux de désabonnement en identifiant et en comprenant les facteurs de risque clés. Le livrable final est un tableau de bord Power BI fournissant des insights actionnables.
+### 5. Analyse des Ventes sous Excel
+**Excel | Power Query | Tableaux croisés dynamiques**
 
-## 🛠️ Méthodologie & Réalisations Clés
+Suivi des performances commerciales par région et catégorie pour identifier les zones à améliorer.
 
-- Nettoyage et Transformation des Données (Power Query) : Utilisation de l'éditeur Power Query (M Language) pour nettoyer, structurer et préparer le jeu de données avant l'analyse.
-- Calculs Avancés (DAX) : Implémentation de mesures complexes en DAX pour :
-    - Le calcul du Churn Rate (global et par segment).
-    - L'établissement de métriques d'engagement et de fidélisation.
+**Réalisations :**
+- Analyse de la répartition des performances régionales
+- Identification des catégories à fort impact
+- Recommandations actionnables pour l'optimisation des ventes
 
-- Analyse et Identification des Facteurs Clés : L'analyse visuelle et l'exploration des données ont permis d'isoler les variables ayant le plus fort impact sur le désabonnement :
-    - Démographie du client.
+📁 [Voir le projet](./Sales%20analysis)
 
-    - Type de contrat souscrit.
+---
 
-    - Usage des services (en particulier l'usage international et l'utilisation des données).
+## 🛠️ Stack technique
 
-- Visualisation et Communication : Conception et implémentation d'un tableau de bord interactif sous Power BI. Ce dashboard éclaire les décisions et permet de cibler les patterns de désabonnement pour des actions marketing et opérationnelles spécifiques.
+| Catégorie | Outils |
+|---|---|
+| SQL & Bases de données | SQL, NoSQL, PostgreSQL, Snowflake, MongoDB |
+| BI & Reporting | Power BI, DAX, Power Query, Tableau, Excel Avancé|
+| Python | Pandas, NumPy, Scikit-learn, Plotly, Matplotlib |
+| Data Engineering | BigQuery, GCP |
+| Versionning | Git, GitHub |
 
-## 🗂️ Données
+---
 
-- Source : Données de l'entreprise de télécommunications Databel
+##  À propos
 
-- Outils Clés : Outils Clés : Power BI (Power Query, DAX, Visualisation).
+Je suis data analyst passionnée par la transformation de données brutes en informations décisionnelles concrètes. Rigoureuse et autonome, j'interviens sur l'ensemble de la chaîne data : de l'extraction SQL à la visualisation Power BI, en passant par la conception d'architectures data et la fiabilisation des données.
 
-
-
------
-
-# Projet 5: Analyse des facteurs de performances commerciales  avec Python
-
-##  Objectif
-Ce projet vise à explorer les facteurs qui influencent les performances des employés afin de:
-- Comprendre les interactions entre les produits
-- comprendre les performances régionales et les marges
-
-## 🗂 Données
-- **Source Sales analysis** : [Superstore Dataset(Kaggle)](https://www.kaggle.com/datasets/vivek468/superstore-dataset-final)
-- *Coming soon...*
-
-  
-![close-up-de-femmes-cadres-avec-tablette-numerique (1)](https://github.com/user-attachments/assets/1adaf1c1-5cab-4a2e-a513-6fde790fda64)
-
-## ​About me
-Je suis une data analyst passionnée par la transformation de données brutes en informations pertinentes. Mes compétences incluent SQL, Python, le machine learning et la visualisation de données avec Excel, Power BI, Tableau.
+📧 [vanessa.kenfack@outlook.fr](mailto:vanessa.kenfack@outlook.fr) | 🔗 [LinkedIn](https://www.linkedin.com/in/vanessa-kenfack-temgoua-028937248)

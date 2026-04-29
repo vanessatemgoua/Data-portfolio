@@ -83,6 +83,22 @@ Suivi des performances commerciales par région et catégorie pour identifier le
 📁 [Voir le projet](./Sales%20analysis)
 
 ---
+### 6. Global Superstore | Sales Performance Dashboard
+**Power BI | DAX | Power Query**
+
+Tableau de bord commercial interactif pour piloter les performances de ventes 
+d'une entreprise internationale de distribution en temps réel.
+
+**Réalisations :**
+- Conception de 3 pages interactives : Vue d'ensemble, Analyse Produit, Analyse Géographique
+- Calcul de KPIs avancés en DAX : CA N/N-1, taux de marge, variation directionnelle avec flèches
+- Détection des produits déficitaires via scatter plot Remise vs Profit
+- Analyse géographique mondiale avec carte à bulles et Top 10 pays par CA et Profit
+- Modélisation en schéma en étoile avec table Calendrier et mesures DAX optimisées
+
+📁 [Voir le projet](./Sales%20Performance%20Analysis%20with%20Power%20BI)
+
+---
 
 ## 🛠️ Stack technique
 

@@ -36,7 +36,7 @@ Tableau de bord RH interactif conçu pour suivre et analyser les effectifs et l'
 - Navigation multi-pages : Overview, Démographie, Suivi des performances, Attrition
 - Exploration des données RH pour comprendre les facteurs qui influencent les performances des employés.
 
-📁 [Voir le projet](./HR%20analysis)
+📁 [Voir le projet](./HR_Analytics_Dashboard)
 
 ---
 

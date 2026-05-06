@@ -122,6 +122,17 @@ Données nettoyées et décodées :
 
 ---
 
+##  Aperçu
+
+### Page 1: Vue globale
+![Vue globale](./screenshots/page1_vue_globale.png)
+
+### Page 2: Analyse du risque par âge
+![Risque par âge](./screenshots/page2_risque_age.png)
+
+### Page 3: Analyse Cholestérol
+![Cholestérol](./screenshots/page3_cholesterol.png)
+---
 ##  Insights clés
 
 - **51%** des patients sont malades

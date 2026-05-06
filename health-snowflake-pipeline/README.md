@@ -99,21 +99,21 @@ Données nettoyées et décodées :
 
 ## Dashboard Power BI
 
-### Page 1 — Vue globale
+### Page 1 Vue globale
 - 5 KPI Cards : Total patients, Malades, Taux malades %, Age moyen, Score risque moyen
 - Répartition par sexe & statut
 - Distribution Homme / Femme
 - Distribution des niveaux de risque
 - Slicer : Sexe
 
-### Page 2 — Analyse du risque par âge
+### Page 2 Analyse du risque par âge
 - Taux de risque par tranche d'âge
 - Malades vs Sains par tranche d'âge
 - Taux de risque par type de douleur
 - Table détaillée avec mise en forme conditionnelle
 - Slicers : Sexe | Type de douleur
 
-### Page 3 — Analyse Cholestérol
+### Page 3 Analyse Cholestérol
 - Patients par niveau de cholestérol & statut
 - Répartition des niveaux de cholestérol
 - Âge moyen par niveau de cholestérol

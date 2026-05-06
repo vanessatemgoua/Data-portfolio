@@ -62,6 +62,12 @@ Le rapport est structuré en 4 pages :
 - Les tendances de recrutement montrent une croissance des effectifs entre 2017 et 2022
 
 ---
+## 📸 Aperçu & Démonstration
+
+[![Voir la démo](./Overview.png)](https://cap.link/q36npy574znk453)
+
+> Cliquez sur l'image pour voir la présentation vidéo complète
+---
 
 ## 📁 Fichiers
 

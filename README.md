@@ -99,6 +99,26 @@ d'une entreprise internationale de distribution en temps réel.
 📁 [Voir le projet](./Sales%20Performance%20Analysis%20with%20Power%20BI)
 
 ---
+ 
+### 7. Health Data Pipeline — Snowflake + Power BI
+**Python | SQL | Snowflake | Power BI | DAX**
+ 
+Pipeline de données end-to-end sur des données cardiaques hospitalières, de l'ingestion brute jusqu'au dashboard décisionnel interactif.
+ 
+**Réalisations :**
+- Ingestion de 1 025 patients via Python (Pandas + snowflake-connector) dans la couche RAW Snowflake
+- Transformation et décodage des données en SQL (couche STAGING) : sexe, type de douleur, statut
+- Conception de 6 tables KPIs en couche GOLD : taux de risque, score patient, cholestérol, fréquence cardiaque
+- Calcul d'un score de risque personnalisé par patient (Risque Faible / Modéré / Élevé)
+- Dashboard Power BI 3 pages : Vue globale, Analyse du risque par âge, Analyse cholestérol
+**Insights clés :**
+- 51% des patients sont malades | 70% des cas concernent des hommes
+- La tranche 40-54 ans présente le taux de risque le plus élevé (65,9%)
+- 50% des patients ont un cholestérol élevé (240+ mg/dL)
+  
+📁 [Voir le projet](./Health%20Data%20Pipeline)
+ 
+---
 
 ## 🛠️ Stack technique
 

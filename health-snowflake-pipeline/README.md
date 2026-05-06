@@ -1,4 +1,4 @@
-#  Health Data Pipeline — Snowflake + Power BI
+#  Health Data Pipeline: Snowflake + Power BI
 
 ## Contexte & Problématique
 
@@ -15,11 +15,11 @@ CSV (Kaggle)
      ↓
 Python (Pandas + snowflake-connector)
      ↓
-Snowflake — couche RAW
+Snowflake - couche RAW
      ↓ (SQL)
-Snowflake — couche STAGING (nettoyage + décodage)
+Snowflake - couche STAGING (nettoyage + décodage)
      ↓ (SQL)
-Snowflake — couche GOLD (KPIs + agrégations)
+Snowflake - couche GOLD (KPIs + agrégations)
      ↓
 Power BI (dashboard 3 pages)
 ```
@@ -66,7 +66,7 @@ health-snowflake-pipeline/
 
 ##  Dataset
 
-- **Source** : [Heart Disease Dataset — Kaggle](https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset)
+- **Source** : [Heart Disease Dataset - Kaggle](https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset)
 - **Volume** : 1 025 patients, 14 variables
 - **Variables clés** : âge, sexe, type de douleur thoracique, cholestérol, pression artérielle, fréquence cardiaque, statut (malade/sain)
 

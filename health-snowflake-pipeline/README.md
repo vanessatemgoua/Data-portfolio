@@ -97,7 +97,7 @@ Données nettoyées et décodées :
 
 ---
 
-## 📊 Dashboard Power BI
+## Dashboard Power BI
 
 ### Page 1 — Vue globale
 - 5 KPI Cards : Total patients, Malades, Taux malades %, Age moyen, Score risque moyen

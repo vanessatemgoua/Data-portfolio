@@ -116,7 +116,7 @@ Pipeline de données end-to-end sur des données cardiaques hospitalières, de l
 - La tranche 40-54 ans présente le taux de risque le plus élevé (65,9%)
 - 50% des patients ont un cholestérol élevé (240+ mg/dL)
   
-📁 [Voir le projet](./Health%20Data%20Pipeline)
+📁 [Voir le projet](./health-snowflake-pipeline)
  
 ---
 

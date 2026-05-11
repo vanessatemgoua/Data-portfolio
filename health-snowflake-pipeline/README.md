@@ -144,6 +144,13 @@ Données nettoyées et décodées :
 
 ---
 
+##  Aperçu & Démonstration
+
+[![Voir la démo](./screenshots/page1_vue_globale.png)]([https://cap.link/vxse8f0a11wzfrh](https://cap.link/4zhn27487qssp5k))
+
+> Cliquez sur l'image pour voir la présentation vidéo complète
+---
+
 ## Lancer le projet
 
 ### Prérequis

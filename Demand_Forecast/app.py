@@ -362,7 +362,7 @@ if len(val_actual) > 0:
             else:             return "background-color: #ffebee"
 
         st.dataframe(
-            tbl.style.applymap(color_diff, subset=["Écart (%)"]),
+            tbl.style.map(color_diff, subset=["Écart (%)"]),
             use_container_width=True,
             hide_index=True
         )

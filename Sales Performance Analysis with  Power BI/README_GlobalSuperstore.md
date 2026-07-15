@@ -10,7 +10,7 @@ Ce projet répond à une problématique métier concrète : permettre aux équip
 
 ---
 
-## 📸 Aperçu
+##  Aperçu
 
 ### Page 1 — Vue d'ensemble
 ![Overview](./overview_sales.png)
@@ -57,7 +57,7 @@ Ce projet répond à une problématique métier concrète : permettre aux équip
 
 ---
 
-## 💡 Insights clés
+##  Insights clés
 
 - Le CA a progressé de **+51,5%** entre 2011 et 2014, passant de 2,26M€ à 4,30M€
 - Les **smartphones** dominent le Top 10 des produits (Apple, Cisco, Motorola)
@@ -68,7 +68,7 @@ Ce projet répond à une problématique métier concrète : permettre aux équip
 
 ---
 
-## 📋 Recommandations métiers
+##  Recommandations métiers
 
 1. **Revoir la politique de remise** : limiter les réductions à 40% maximum pour éviter les ventes déficitaires
 2. **Réévaluer la gamme Tables** : marge négative malgré un volume de ventes significatif
@@ -76,7 +76,7 @@ Ce projet répond à une problématique métier concrète : permettre aux équip
 
 ---
 
-## ⚙️ Modélisation des données
+##  Modélisation des données
 
 - Schéma en étoile avec table de faits centrale (Orders) et tables de dimensions
 - Table Calendrier créée en DAX pour les analyses temporelles
@@ -84,7 +84,7 @@ Ce projet répond à une problématique métier concrète : permettre aux équip
 
 ---
 
-## 📸 Aperçu & Démonstration
+##  Aperçu & Démonstration
 
 [![Voir la démo](./overview_sales.png)](https://cap.link/vxse8f0a11wzfrh)
 

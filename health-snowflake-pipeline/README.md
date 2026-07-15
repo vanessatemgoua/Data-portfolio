@@ -1,4 +1,4 @@
-#  Health Data Pipeline — Snowflake + Power BI
+#  Health Data Pipeline: Snowflake + Power BI
 
 ## Contexte & Problématique
 
@@ -15,11 +15,11 @@ CSV (Kaggle)
      ↓
 Python (Pandas + snowflake-connector)
      ↓
-Snowflake — couche RAW
+Snowflake - couche RAW
      ↓ (SQL)
-Snowflake — couche STAGING (nettoyage + décodage)
+Snowflake - couche STAGING (nettoyage + décodage)
      ↓ (SQL)
-Snowflake — couche GOLD (KPIs + agrégations)
+Snowflake - couche GOLD (KPIs + agrégations)
      ↓
 Power BI (dashboard 3 pages)
 ```
@@ -66,7 +66,7 @@ health-snowflake-pipeline/
 
 ##  Dataset
 
-- **Source** : [Heart Disease Dataset — Kaggle](https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset)
+- **Source** : [Heart Disease Dataset - Kaggle](https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset)
 - **Volume** : 1 025 patients, 14 variables
 - **Variables clés** : âge, sexe, type de douleur thoracique, cholestérol, pression artérielle, fréquence cardiaque, statut (malade/sain)
 
@@ -97,23 +97,23 @@ Données nettoyées et décodées :
 
 ---
 
-## 📊 Dashboard Power BI
+## Dashboard Power BI
 
-### Page 1 — Vue globale
+### Page 1 Vue globale
 - 5 KPI Cards : Total patients, Malades, Taux malades %, Age moyen, Score risque moyen
 - Répartition par sexe & statut
 - Distribution Homme / Femme
 - Distribution des niveaux de risque
 - Slicer : Sexe
 
-### Page 2 — Analyse du risque par âge
+### Page 2 Analyse du risque par âge
 - Taux de risque par tranche d'âge
 - Malades vs Sains par tranche d'âge
 - Taux de risque par type de douleur
 - Table détaillée avec mise en forme conditionnelle
 - Slicers : Sexe | Type de douleur
 
-### Page 3 — Analyse Cholestérol
+### Page 3 Analyse Cholestérol
 - Patients par niveau de cholestérol & statut
 - Répartition des niveaux de cholestérol
 - Âge moyen par niveau de cholestérol
@@ -122,6 +122,17 @@ Données nettoyées et décodées :
 
 ---
 
+##  Aperçu
+
+### Page 1: Vue globale
+![Vue globale](./screenshots/page1_vue_globale.png)
+
+### Page 2: Analyse du risque par âge
+![Risque par âge](./screenshots/page2_risque_age.png)
+
+### Page 3: Analyse Cholestérol
+![Cholestérol](./screenshots/page3_cholesterol.png)
+---
 ##  Insights clés
 
 - **51%** des patients sont malades
@@ -131,6 +142,13 @@ Données nettoyées et décodées :
 - **50%** des patients ont un cholestérol élevé (240+ mg/dL)
 - Un cholestérol élevé est davantage présent chez les patients sains que malades dans ce dataset
 
+---
+
+##  Aperçu & Démonstration
+
+[![Voir la démo](./screenshots/page1_vue_globale.png)]([https://cap.link/vxse8f0a11wzfrh](https://cap.link/4zhn27487qssp5k))
+
+> Cliquez sur l'image pour voir la présentation vidéo complète
 ---
 
 ## Lancer le projet

@@ -6,6 +6,9 @@ import plotly.express as px
 from plotly.subplots import make_subplots
 import joblib
 import base64
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # ── Rossmann logo ─────────────────────────────────────────────────────────────
 
@@ -133,12 +136,12 @@ chart_tpl = _inject_styles(st.session_state.dark_mode)
 
 @st.cache_resource
 def load_bundle():
-    return joblib.load("models/all_prophet_models.joblib")
+    return joblib.load(os.path.join(BASE_DIR, "models", "all_prophet_models.joblib"))
 
 @st.cache_data
 def load_train():
-    train = pd.read_csv("dataset/train.csv", parse_dates=["Date"], low_memory=False)
-    store = pd.read_csv("dataset/store.csv")
+    train = pd.read_csv(os.path.join(BASE_DIR, "dataset", "train.csv"), parse_dates=["Date"], low_memory=False)
+    store = pd.read_csv(os.path.join(BASE_DIR, "dataset", "store.csv"))
     return train.merge(store, on="Store", how="left")
 
 bundle      = load_bundle()

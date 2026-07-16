@@ -148,7 +148,7 @@ Le dashboard Streamlit déployé est conçu pour être utilisé par des **respon
 - **Compréhension des patterns** - La décomposition Prophet révèle la tendance long terme, l'effet jour de la semaine et la saisonnalité annuelle, utile pour planifier les pics d'activité
 - **Benchmarking** - La vue globale permet de situer un store parmi les 1 115 en termes de précision de prévision (distribution RMSPE + top 20 meilleurs stores)
 
-📁 [Voir le projet](./Demand_Forecast) | 🚀 [Application live](https://rossmanndemandforecast.streamlit.app/)
+📁 [Voir le projet](./Demand_Forecast) |  [Application live](https://rossmanndemandforecast.streamlit.app)
 
 ---
 

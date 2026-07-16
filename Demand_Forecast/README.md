@@ -2,7 +2,7 @@
 
 Application de prevision des ventes journalieres deployee sur Streamlit Cloud.
 
-🚀 [Application live](https://rossmanndemandforecast.streamlit.app/)
+[Application live](https://rossmanndemandforecast.streamlit.app/)
 
 ---
 
@@ -148,15 +148,6 @@ python -m venv .venv
 .venv\Scripts\activate        # Windows
 source .venv/bin/activate     # Mac/Linux
 pip install -r requirements.txt
-```
-
-**3. Telecharger le dataset Kaggle**
-
-Creer un compte sur [kaggle.com](https://www.kaggle.com), accepter les conditions de la competition Rossmann Store Sales, puis :
-```bash
-pip install kaggle
-kaggle competitions download -c rossmann-store-sales -p dataset/
-cd dataset && unzip rossmann-store-sales.zip && cd ..
 ```
 
 ---

@@ -164,13 +164,9 @@ cd dataset && unzip rossmann-store-sales.zip && cd ..
 ## Execution
 
 **Notebooks (dans l'ordre)**
-```bash
-# Activer l'environnement
-.venv\Scripts\activate
 
-# Lancer Jupyter
-jupyter notebook
-```
+Ouvrir le dossier `Demand_Forecast/` dans VSCode, puis selectionner le kernel `.venv` lors de la premiere ouverture d'un notebook.
+
 Executer dans l'ordre : `01_EDA.ipynb` → `02_Modeling.ipynb` → `03_TimeSeries.ipynb`
 
 > Le notebook `03_TimeSeries.ipynb` entraine les 1 115 modeles Prophet et genere `models/all_prophet_models.joblib`. Cette etape peut prendre 30 a 60 minutes selon la machine.

@@ -100,7 +100,7 @@ d'une entreprise internationale de distribution en temps réel.
 
 ---
  
-### 7. Health Data Pipeline — Snowflake + Power BI
+### 7. Health Data Pipeline - Snowflake + Power BI
 **Python | SQL | Snowflake | Power BI | DAX**
  
 Pipeline de données end-to-end sur des données cardiaques hospitalières, de l'ingestion brute jusqu'au dashboard décisionnel interactif.
@@ -120,27 +120,35 @@ Pipeline de données end-to-end sur des données cardiaques hospitalières, de l
  
 ---
 
-### 8. Rossmann Store Sales — Prévision de la Demande
-**Python | LightGBM | Prophet | Streamlit | Plotly**
+### 8. Rossmann Store Sales - Prévision de la Demande
+**Python | LightGBM | SARIMA | Prophet | Streamlit | Plotly**
 
-Projet de prévision des ventes journalières pour la chaîne de pharmacies allemande Rossmann (dataset Kaggle), couvrant 1 115 magasins sur 2,5 ans de données historiques. L'objectif : anticiper la demande à 6 semaines et déployer un outil décisionnel interactif.
+Projet end-to-end de prévision des ventes journalières pour la chaîne de pharmacies allemande Rossmann (dataset Kaggle - compétition 2015), couvrant **1 115 magasins** sur 2,5 ans de données historiques. L'objectif métier : fournir aux responsables de stores une prévision fiable à horizon 6 semaines pour anticiper les stocks, les effectifs et les campagnes promotionnelles.
 
-**Problématique :** Comment prédire les ventes de chaque magasin en tenant compte des promotions, des jours fériés, de la saisonnalité hebdomadaire et annuelle, tout en gérant l'hétérogénéité des 1 115 stores ?
+**Problématique :** Comment anticiper la demande de chaque magasin en tenant compte des promotions, des jours fériés, de la saisonnalité hebdomadaire et annuelle, tout en déployant une solution scalable sur 1 115 stores aux profils très différents ?
 
-**Démarche :**
-1. **EDA** — Analyse exploratoire : distribution des ventes (log-normale), impact des promotions (+20% en moyenne), saisonnalité hebdomadaire (pic le lundi), variations par type de store
-2. **Feature Engineering** — Variables de lag (7, 14, 21, 28 jours), moyennes mobiles (7, 14, 28 jours), encodage des dates, variables calendaires
-3. **Modélisation LightGBM** — Entraînement sur log(Sales), split temporel strict (6 dernières semaines en validation), early stopping → **RMSPE : 11,94%**
-4. **Séries temporelles** — Comparaison SARIMA(1,1,1)(1,1,0)[52] vs Prophet sur store représentatif : SARIMA 7,23% vs Prophet 9,38%
-5. **Déploiement à l'échelle** — Entraînement Prophet sur les 1 115 stores avec régresseur Promo + jours fériés allemands, sauvegarde en bundle unique (joblib)
-6. **Application Streamlit** — Dashboard interactif avec prévisions à horizon paramétrable, décomposition tendance/saisonnalité, comparaison réel vs prédit, performance globale
+**Comparaison des modèles testés**
 
-**Résultats :**
-- 1 115 modèles Prophet entraînés, RMSPE médian : ~9,5%
-- Dashboard déployé sur Streamlit Cloud avec mode nuit, logo Rossmann, police Poppins
-- Graphiques Plotly interactifs : prévision avec IC 95%, réel vs prédit avec barres d'écart, décomposition Prophet
+| Modèle | RMSPE | Avantages | Limites |
+|---|---|---|---|
+| LightGBM | 11,94% | Très performant globalement, gère les interactions complexes entre features | Nécessite un feature engineering intensif (lags, rolling), peu interprétable pour les décideurs |
+| SARIMA(1,1,1)(1,1,0)[52] | 7,23% | Meilleure performance sur le store test, modèle statistique rigoureux | Non scalable : un modèle par store, paramétrage manuel, trop lent sur 1 115 stores |
+| **Prophet** | **9,38%** | **Scalable, interprétable, gère nativement les jours fériés et la saisonnalité multiple** | Légèrement moins précis que SARIMA sur un store isolé |
 
-📁 [Voir le projet](./Demand_Forecast) | 🚀 [Application live](https://rossmann-demand-forecast.streamlit.app)
+**Pourquoi Prophet a été retenu :**
+Malgré un RMSPE légèrement supérieur à SARIMA sur un store test, Prophet a été choisi pour son **déploiement à l'échelle** : il s'entraîne automatiquement sur les 1 115 stores sans paramétrage manuel, intègre nativement les jours fériés allemands et la double saisonnalité (hebdomadaire + annuelle), et produit une décomposition lisible (tendance, saisonnalité, effet promo) directement exploitable par des non-techniciens. LightGBM, bien qu'efficace, ne fournit pas de lecture temporelle claire et ne se prête pas à une analyse store par store dans un outil décisionnel.
+
+**Application décisionnelle - comment elle est utilisée**
+
+Le dashboard Streamlit déployé est conçu pour être utilisé par des **responsables de magasin et des équipes commerciales** sans compétences techniques :
+
+- **Sélection du store et de l'horizon** - Le responsable choisit son magasin et la durée de prévision (1 à 12 semaines), avec ou sans promotion activée
+- **Lecture de la prévision** - Un graphique interactif affiche les ventes attendues jour par jour avec l'intervalle de confiance à 95%, permettant d'évaluer le meilleur et le pire scénario
+- **Suivi de la performance** - La section *Réel vs Prédit* compare les prévisions passées aux ventes réelles observées, avec des indicateurs d'écart pour évaluer la fiabilité du modèle sur ce store
+- **Compréhension des patterns** - La décomposition Prophet révèle la tendance long terme, l'effet jour de la semaine et la saisonnalité annuelle, utile pour planifier les pics d'activité
+- **Benchmarking** - La vue globale permet de situer un store parmi les 1 115 en termes de précision de prévision (distribution RMSPE + top 20 meilleurs stores)
+
+📁 [Voir le projet](./Demand_Forecast) | 🚀 [Application live](https://rossmanndemandforecast.streamlit.app/)
 
 ---
 

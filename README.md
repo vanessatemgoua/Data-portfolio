@@ -100,7 +100,7 @@ d'une entreprise internationale de distribution en temps réel.
 
 ---
  
-### 7. Health Data Pipeline — Snowflake + Power BI
+### 7. Health Data Pipeline - Snowflake + Power BI
 **Python | SQL | Snowflake | Power BI | DAX**
  
 Pipeline de données end-to-end sur des données cardiaques hospitalières, de l'ingestion brute jusqu'au dashboard décisionnel interactif.
@@ -120,7 +120,7 @@ Pipeline de données end-to-end sur des données cardiaques hospitalières, de l
  
 ---
 
-### 8. Rossmann Store Sales — Prévision de la Demande
+### 8. Rossmann Store Sales - Prévision de la Demande
 **Python | LightGBM | Prophet | Streamlit | Plotly**
 
 Projet de prévision des ventes journalières pour la chaîne de pharmacies allemande Rossmann (dataset Kaggle), couvrant 1 115 magasins sur 2,5 ans de données historiques. L'objectif : anticiper la demande à 6 semaines et déployer un outil décisionnel interactif.

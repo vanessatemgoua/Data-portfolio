@@ -120,13 +120,37 @@ Pipeline de données end-to-end sur des données cardiaques hospitalières, de l
  
 ---
 
+### 8. Rossmann Store Sales — Prévision de la Demande
+**Python | LightGBM | Prophet | Streamlit | Plotly**
+
+Projet de prévision des ventes journalières pour la chaîne de pharmacies allemande Rossmann (dataset Kaggle), couvrant 1 115 magasins sur 2,5 ans de données historiques. L'objectif : anticiper la demande à 6 semaines et déployer un outil décisionnel interactif.
+
+**Problématique :** Comment prédire les ventes de chaque magasin en tenant compte des promotions, des jours fériés, de la saisonnalité hebdomadaire et annuelle, tout en gérant l'hétérogénéité des 1 115 stores ?
+
+**Démarche :**
+1. **EDA** — Analyse exploratoire : distribution des ventes (log-normale), impact des promotions (+20% en moyenne), saisonnalité hebdomadaire (pic le lundi), variations par type de store
+2. **Feature Engineering** — Variables de lag (7, 14, 21, 28 jours), moyennes mobiles (7, 14, 28 jours), encodage des dates, variables calendaires
+3. **Modélisation LightGBM** — Entraînement sur log(Sales), split temporel strict (6 dernières semaines en validation), early stopping → **RMSPE : 11,94%**
+4. **Séries temporelles** — Comparaison SARIMA(1,1,1)(1,1,0)[52] vs Prophet sur store représentatif : SARIMA 7,23% vs Prophet 9,38%
+5. **Déploiement à l'échelle** — Entraînement Prophet sur les 1 115 stores avec régresseur Promo + jours fériés allemands, sauvegarde en bundle unique (joblib)
+6. **Application Streamlit** — Dashboard interactif avec prévisions à horizon paramétrable, décomposition tendance/saisonnalité, comparaison réel vs prédit, performance globale
+
+**Résultats :**
+- 1 115 modèles Prophet entraînés, RMSPE médian : ~9,5%
+- Dashboard déployé sur Streamlit Cloud avec mode nuit, logo Rossmann, police Poppins
+- Graphiques Plotly interactifs : prévision avec IC 95%, réel vs prédit avec barres d'écart, décomposition Prophet
+
+📁 [Voir le projet](./Demand_Forecast) | 🚀 [Application live](https://rossmann-demand-forecast.streamlit.app)
+
+---
+
 ## 🛠️ Stack technique
 
 | Catégorie | Outils |
 |---|---|
 | SQL & Bases de données | SQL, NoSQL, PostgreSQL, Snowflake, MongoDB |
 | BI & Reporting | Power BI, DAX, Power Query, Tableau, Excel Avancé|
-| Python | Pandas, NumPy, Scikit-learn, Plotly, Matplotlib |
+| Python | Pandas, NumPy, Scikit-learn, Plotly, Matplotlib, LightGBM, Prophet, Streamlit |
 | Data Engineering | BigQuery, GCP |
 | Versionning | Git, GitHub |
 
